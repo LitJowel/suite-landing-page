@@ -9,25 +9,46 @@
 			sizes="32x32"
 			href="./assets/favicon-32x32.png"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Mentor | Suite landing page</title>
 	</head>
 	<body>
 		<header class="hero">
-			<div class="hero__top">
+			<div class="hero__top container">
 				<a href="#" class="logo"
 					><img src="assets/logo.svg" alt="Suite Logo"
 				/></a>
-				<a href="#" class="hero__cta">Request Beta Access</a>
+				<a href="#" class="button">Request Beta Access</a>
 			</div>
-			<div>
+			<div class="hero__contain container">
 				<div>
 					<div>
-						<h1>A super solution for your business.</h1>
-						<p>
+						<h1 class="hero-title">
+							A
+							<span class="hero-title--bold"
+								>super
+								<span class="hero-title--decoration">solution</span></span
+							>
+							for your <span class="hero-title--bold">business</span>.
+						</h1>
+						<p class="hero-text">
 							Our marketing and sales automations help you scale your outreach
 							to get more leads for your company.
 						</p>
-						<a href="#" class="hero__cta">Request Beta Access</a>
+						<a href="#" class="button button--cta">Request Beta Access</a>
 					</div>
 					<picture>
 						<source
@@ -56,13 +77,18 @@
 							src="assets/image-hero-landscape.webp"
 							srcset="assets/image-hero-landscape@2x.webp 2x"
 							alt="Smartphone"
+							class="hero-img"
 						/>
 					</picture>
 				</div>
-				<ul>
-					<li>2K+<span>Companies</span></li>
-					<li>8<span>Languages</span></li>
-					<li>1.2M<span>Leads</span></li>
+				<ul class="stats">
+					<li class="stats-item">
+						2K+<span class="stats-title">Companies</span>
+					</li>
+					<li class="stats-item">
+						8<span class="stats-title">Languages</span>
+					</li>
+					<li class="stats-item">1.2M<span class="stats-title">Leads</span></li>
 				</ul>
 			</div>
 		</header>
