@@ -1,0 +1,16 @@
+:root {
+	--color-dark-blue: hsl(219, 43%, 16%);
+	--color-gray: hsl(218, 20%, 36%);
+	--color-cream: hsl(30, 33%, 93%);
+	--color-cream-white: hsl(30, 29%, 97%);
+	--color-purple: hsl(264, 100%, 69%);
+	--color-violet: hsl(292, 76%, 54%);
+	--color-yellow: hsl(31, 100%, 65%);
+	--font-heading-small: 1rem;
+	--font-heading-medium: 1.125rem;
+	--font-heading-large: 3rem;
+	--font-heading-x-large: 4.625rem;
+	--font-quote: 1.25rem;
+	--font-body: 1.125rem;
+	--font-footer: 0.9375rem;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Suite landing page</title>
+	</head>
+	<body>
+		<header class="hero">
+			<div class="hero__top">
+				<a href="#" class="logo"
+					><img src="assets/logo.svg" alt="Suite Logo"
+				/></a>
+				<a href="#" class="hero__cta">Request Beta Access</a>
+			</div>
+			<div>
+				<div>
+					<div>
+						<h1>A super solution for your business.</h1>
+						<p>
+							Our marketing and sales automations help you scale your outreach
+							to get more leads for your company.
+						</p>
+						<a href="#" class="hero__cta">Request Beta Access</a>
+					</div>
+					<picture>
+						<source
+							media="(min-width: 768px)"
+							srcset="
+								assets/image-hero-portrait.png,
+								assets/image-hero-portrait@2x.png 2x
+							"
+							type="image/png"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcset="
+								assets/image-hero-portrait.webp,
+								assets/image-hero-portrait@2x.webp 2x
+							"
+						/>
+						<source
+							srcset="
+								assets/image-hero-landscape.png,
+								assets/image-hero-landscape@2x.png 2x
+							"
+							type="image/png"
+						/>
+						<img
+							src="assets/image-hero-landscape.webp"
+							srcset="assets/image-hero-landscape@2x.webp 2x"
+							alt="Smartphone"
+						/>
+					</picture>
+				</div>
+				<ul>
+					<li>2K+<span>Companies</span></li>
+					<li>8<span>Languages</span></li>
+					<li>1.2M<span>Leads</span></li>
+				</ul>
+			</div>
+		</header>
+		<div>
+			<picture>
+				<source
+					media="(min-width: 768px)"
+					srcset="
+						assets/image-jeremy-large.png,
+						assets/image-jeremy-large@2x.png
+					"
+					type="image/png"
+				/>
+				<source
+					media="(min-width: 768px)"
+					srcset="
+						assets/image-jeremy-large.webp,
+						assets/image-jeremy-small@2x.webp
+					"
+				/>
+				<source
+					srcset="
+						assets/image-jeremy-small.png,
+						assets/image-jeremy-small@2x.png 2x
+					"
+					type="image/png"
+				/>
+				<img
+					src="assets/image-jeremy-small.webp"
+					srcset="assets/image-jeremy-small@2x.webp 2x"
+					alt="Jeremy looking at his phone"
+				/><!-- srcset es una solución para la perdida de calidad debido al device pixel ratio -->
+			</picture>
+			<div>
+				<h2>It just works</h2>
+				<p>
+					“I really like how it is an all-in-one solution that handle many of
+					the tasks that you would normally need separate tools to do the same
+					job. This thing is a miracle worker.”
+				</p>
+				<p><span>Jeremy Robinson</span>CMO, FYLO</p>
+			</div>
+		</div>
+		<footer>
+			<a href="#" class="logo"
+				><img src="assets/logo.svg" alt="Suite Logo"
+			/></a>
+			<small>Copyright - Suite</small>
+			<div>
+				<span><img src="assets/icon-facebook.svg" alt="Facebook Icon" /></span>
+				<span><img src="assets/icon-twitter.svg" alt="Twitter Icon" /></span>
+				<span
+					><img src="assets/icon-instagram.svg" alt="Instagram Icon"
+				/></span>
+			</div>
+		</footer>
+
+		<!-- A super solution for your business.
+
+  Our marketing and sales automations help you scale your outreach to 
+  get more leads for your company. 
+
+  Request Beta Access
+
+  2K+
+  Companies
+
+  8
+  Languages
+
+  1.2M
+  Leads
+
+  It just works.
+
+  “I really like how it is an all-in-one solution that handle many of 
+  the tasks that you would normally need separate tools to do the same 
+  job. This thing is a miracle worker.”
+
+  Jeremy Robinson
+  CMO, Fylo
+
+  Copyright - Suite
+ -->
+	</body>
+</html>
