@@ -94,8 +94,8 @@
 				</ul>
 			</div>
 		</header>
-		<div>
-			<picture>
+		<div class="section">
+			<picture class="section__picture">
 				<source
 					media="(min-width: 768px)"
 					srcset="
@@ -122,16 +122,23 @@
 					src="assets/image-jeremy-small.webp"
 					srcset="assets/image-jeremy-small@2x.webp 2x"
 					alt="Jeremy looking at his phone"
+					class="section__img"
 				/><!-- srcset es una solución para la perdida de calidad debido al device pixel ratio -->
 			</picture>
-			<div>
-				<h2>It just works</h2>
-				<p>
+			<div class="section__content container">
+				<h2 class="section__title">
+					It just <span class="section__title--bold">works.</span>
+				</h2>
+				<p class="section__text section__text-margin">
 					“I really like how it is an all-in-one solution that handle many of
 					the tasks that you would normally need separate tools to do the same
 					job. This thing is a miracle worker.”
 				</p>
-				<p><span>Jeremy Robinson</span>CMO, FYLO</p>
+				<p class="section__text section__jeremy">
+					<span class="section__text--bold section__jeremy--name"
+						>Jeremy Robinson</span
+					>CMO, FYLO
+				</p>
 			</div>
 		</div>
 		<footer>
