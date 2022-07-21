@@ -1,5 +1,5 @@
+/* ##### VARIABLES ##### */
 :root {
-	/* Colors */
 	--color-dark-blue: hsl(219, 43%, 16%);
 	--color-gray: hsl(218, 20%, 36%);
 	--color-cream: hsl(30, 33%, 93%);
@@ -8,7 +8,6 @@
 	--color-violet: hsl(292, 76%, 54%);
 	--color-yellow: hsl(31, 100%, 65%);
 
-	/* Font sizes */
 	--font-heading-x-l: 4.625rem;
 	--font-heading-l: 3rem;
 	--font-heading-m: 1.125rem;
@@ -17,13 +16,10 @@
 	--font-body: 1.125rem;
 	--font-footer: 0.9375rem;
 
-	/* Font Family */
 	--font-epilogue: "Epilogue", sans-serif;
 
-	/* Others */
 	--radius-button: 6px;
 }
-
 @media (max-width: 1024px) {
 	:root {
 		--font-heading-x-l: 2.375rem;
@@ -31,11 +27,26 @@
 		--font-body: 1rem;
 	}
 }
+
+/* ##### BASE AND RESET ##### */
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
 body {
 	font-family: var(--font-epilogue);
+	padding: 0.01px;
+}
+.hero__title,
+.hero__text,
+.hero__cta {
+	margin: 0;
 }
 
-/* UTILITY CLASS */
+/* ##### UTILITY CLASS ##### */
 .container {
 	--margin-size: 1rem;
 	width: calc(100% - calc(2 * var(--margin-size)));
@@ -43,7 +54,6 @@ body {
 	background-color: hsla(204, 100%, 76%, 0.404);
 }
 .button {
-	text-decoration: none;
 	text-align: center;
 	color: var(--color-dark-blue);
 	display: inline-flex;
@@ -56,29 +66,35 @@ body {
 	font: bold var(--font-footer) var(--font-epilogue);
 }
 
-/* Hero */
+/* ##### HERO ##### */
+.hero {
+	margin-top: 24px;
+	margin-bottom: 237px;
+	--gap: 56px;
+}
 .hero__top {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 24px;
 }
-.hero__contain {
-	margin-top: 83px;
+.hero__body {
+	margin-top: calc(var(--gap) + 27px);
 }
-.hero-title {
+.hero__body-content {
+	--gap: 32px;
+}
+.hero__title {
 	font-size: var(--font-heading-x-l);
 	font-weight: 400;
 	color: var(--color-dark-blue);
-	margin-bottom: 32px;
 }
-.hero-title--bold {
+.hero__title--bold {
 	font-weight: bold;
 }
-.hero-title--decoration {
+.hero__title--decoration {
 	position: relative;
 }
-.hero-title--decoration::after {
+.hero__title--decoration::after {
 	content: "";
 	position: absolute;
 	top: -25px;
@@ -88,18 +104,18 @@ body {
 	z-index: 1;
 	background: center / contain no-repeat url("assets/pattern-curved-line-1.svg");
 }
-.hero-text {
+.hero__text {
+	padding-block: var(--gap);
 	font-size: var(--font-body);
 	letter-spacing: 0.09px;
 	line-height: 1.75;
 	color: var(--color-gray);
 }
-.button--cta {
-	margin-top: 32px;
+.hero__cta {
 	background-color: var(--color-dark-blue);
 	color: var(--color-cream-white);
 }
-.button--cta:hover {
+.hero__cta:hover {
 	background: linear-gradient(
 		135deg,
 		var(--color-purple) 0%,
@@ -107,25 +123,28 @@ body {
 		var(--color-yellow)
 	);
 }
-.hero-img {
-	margin-top: 55.68px;
+.hero__picture {
+	display: block;
+	margin-top: var(--gap);
 }
-.stats {
-	list-style: none;
-	padding-left: 0;
+.hero__img {
+	display: block;
+	margin-inline: auto;
+}
+.hero__stats {
+	margin-top: var(--gap);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	gap: 32px;
-	margin-top: 56px;
 }
-.stats-item {
+.hero__stats-item {
 	font-size: var(--font-heading-l);
 	font-weight: bold;
 	color: var(--color-dark-blue);
 }
-.stats-title {
+.hero__stats-title {
 	font-size: var(--font-heading-s);
 	font-weight: 400;
 	letter-spacing: 2.5px;
