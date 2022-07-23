@@ -105,7 +105,8 @@ body {
 .hero__title--decoration::after {
 	content: "";
 	position: absolute;
-	top: -25px;
+	/* top: -1.5625rem; */
+	top: -0.75em;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -189,7 +190,8 @@ body {
 .section__title::before {
 	content: "";
 	position: absolute;
-	top: -80px;
+	/* top: -80px; */
+	top: -2.4em;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -215,3 +217,15 @@ body {
 }
 
 /* ##### FOOTER ##### */
+.footer {
+	margin-block: 56px 80px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 33px;
+}
+.footer__legal-text {
+	font-size: var(--font-footer);
+	color: var(--color-gray);
+	text-align: center;
+}
